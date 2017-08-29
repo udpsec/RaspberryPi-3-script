@@ -5,7 +5,7 @@
 备份系统成一个可烧录的image，详细说明参见：http://conanwhf.github.io/2016/08/25/rpi-cloneimg/
 
 
-## rpi-clone
+## rpi-clone,piclone
 一个超好用的备份工具，感谢开发者！
 来源：https://github.com/billw2/rpi-clone
 
@@ -30,3 +30,8 @@
 - dht11.py，温度湿度传感器，GPIO
 - pcf8591.py，数模转换+照度传感，I2C
 - sample.py，各种协议操作的demo
+
+## rpi-qt
+
+qt在树莓派上的编译脚本，修改版 树莓派制作通用镜像的脚本，修改版 qt在树莓派上链接mssql数据库指南。
+
