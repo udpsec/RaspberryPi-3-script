@@ -1,0 +1,6 @@
+[submodule "piclone"]
+	path = piclone
+	url = git@github.com:raspberrypi-ui/piclone.git
+[submodule "rpi-clone"]
+	path = rpi-clone
+	url = git@github.com:billw2/rpi-clone.git
