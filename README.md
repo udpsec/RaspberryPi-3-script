@@ -1,11 +1,11 @@
 # RaspberryPi-script
 树莓派相关配置&脚本，适用于rpi2B及3B硬件。
 
-## rpi-backup
+## rpi-backup1.sh(修改过的，挂载ntfs-3g的U盘：自己根据修改)
 备份系统成一个可烧录的image，详细说明参见：http://conanwhf.github.io/2016/08/25/rpi-cloneimg/
 
 
-## rpi-clone,piclone
+## rpi-clone,piclone,pi_backup,PiBackup
 一个超好用的备份工具，感谢开发者！
 来源：https://github.com/billw2/rpi-clone
 

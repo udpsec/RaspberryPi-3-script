@@ -7,13 +7,13 @@ if [ -z $1 ]; then
 	echo "no argument, assume the mount device is /dev/sda1 ? Y/N"
 	read key
 	if [ "$key" = "y" -o "$key" = "Y" ]; then
-		sudo mount -t vfat -o uid=1000 /dev/sda1 $usbmount
+		sudo mount -t ntfs-3g -o uid=1000 /dev/sda1 $usbmount
 	else
 		echo "$0 [backup dest device name], e.g. $0 /dev/sda1"
 		exit 0
 	fi
 else
-	sudo mount -t vfat -o uid=1000 $1 $usbmount
+	sudo mount -t ntfs-3g -o uid=1000 $1 $usbmount
 fi
 if [ -z "`grep $usbmount /etc/mtab`" ]; then
 	echo "mount fail, exit now"
@@ -71,7 +71,7 @@ if [ -f /etc/dphys-swapfile ]; then
 	fi
 	EXCLUDE_SWAPFILE="--exclude $SWAPFILE"
 fi
-sudo rsync --force -rltWDEgopt --delete --stats --progress\
+sudo rsync --force -rltWDEgopt --delete --stats --progress \
 	$EXCLUDE_SWAPFILE \
 	--exclude '.gvfs' \
 	--exclude '/dev' \
