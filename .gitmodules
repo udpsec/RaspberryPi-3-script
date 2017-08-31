@@ -7,9 +7,6 @@
 [submodule "rpi-clone"]
 	path = rpi-clone
 	url = git@github.com:billw2/rpi-clone.git
-[submodule "RaspberryPi-script"]
-	path = RaspberryPi-script
-	url = git@github.com:udpsec/RaspberryPi-script.git
 [submodule "PiBackup"]
 	path = PiBackup
 	url = git@github.com:coconut147/PiBackup.git
@@ -19,3 +16,6 @@
 [submodule "pi_backup"]
 	path = pi_backup
 	url = git@github.com:aweijnitz/pi_backup.git
+[submodule "rasp"]
+	path = rasp
+	url = git@github.com:conanwhf/RaspberryPi-script.git
