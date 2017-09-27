@@ -1,6 +1,8 @@
 #!/bin/bash
 ######################################################
 ################## TODO: settings#####################
+#需要还原时,使用
+#sudo dd if=backup.img of=/dev/sd*
 src_root_device=/dev/sdc2 #/dev/root
 src_boot_device=/dev/sdc1 #/dev/mmcblk0p1
 ######################################################
